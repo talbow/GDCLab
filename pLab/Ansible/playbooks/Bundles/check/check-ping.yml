@@ -1,0 +1,9 @@
+---
+
+- hosts: check-osboxes01
+  name: ping Linux machine
+  gather_facts: no
+  connection: ssh
+  tasks:
+  - name: ping CentOS machine
+    ping:
