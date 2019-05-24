@@ -1,0 +1,14 @@
+# Inventory for NADC - GDC
+
+[all:children]
+local
+check-osboxes01
+
+[local]
+localhost
+
+[check:children]
+check-osboxes01
+
+[check-osboxes01]
+osboxes01 ansible_user=root ansible_connection=ssh ansible_ssh_host=192.168.1.108 ansible_ssh_port=22 ansible_ssh_user:=osboxes.org ansible_ssh_pass=osboxes.org
