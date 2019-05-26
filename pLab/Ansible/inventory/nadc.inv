@@ -15,4 +15,4 @@ check-osboxes02
 osboxes01 ansible_user=root ansible_connection=ssh ansible_ssh_host=192.168.1.108 ansible_ssh_port=22 ansible_ssh_user:=osboxes.org ansible_ssh_pass=osboxes.org
 
 [check-osboxes02]
-osboxes01 ansible_user=root ansible_connection=ssh ansible_ssh_host=192.168.1.121 ansible_ssh_port=22 ansible_ssh_user:=osboxes.org ansible_ssh_pass=osboxes.org
+osboxes02 ansible_user=root ansible_connection=ssh ansible_ssh_host=192.168.1.121 ansible_ssh_port=22 ansible_ssh_user:=osboxes.org ansible_ssh_pass=osboxes.org
