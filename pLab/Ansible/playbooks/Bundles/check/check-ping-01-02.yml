@@ -1,0 +1,17 @@
+---
+
+- hosts: check-osboxes01
+  name: ping Linux ansible-target1 machine
+  gather_facts: no
+  connection: ssh
+  tasks:
+  - name: ping CentOS ansible-target1 machine
+    ping:
+    
+- hosts: check-osboxes02
+  name: ping Linux ansible-target2 machine
+  gather_facts: no
+  connection: ssh
+  tasks:
+  - name: ping CentOS ansible-target2 machine
+    ping:
