@@ -5,5 +5,5 @@
   gather_facts: no
   connection: ssh
   tasks:
-  - name: ping CentOS machine
+  - name: ping CentOS ansible-target1 machine
     ping:
