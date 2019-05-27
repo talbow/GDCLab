@@ -1,0 +1,9 @@
+---
+
+- hosts: check-win01
+  name: ping Windows machine
+  gather_facts: no
+  connection: winrm
+  tasks:
+  - name: ping CentOS ansible-target1 machine
+    win_ping:
