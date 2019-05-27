@@ -19,4 +19,4 @@ osboxes01 ansible_user=root ansible_connection=ssh ansible_ssh_host=192.168.1.10
 osboxes02 ansible_user=root ansible_connection=ssh ansible_ssh_host=192.168.1.121 ansible_ssh_port=22 ansible_ssh_user=osboxes.org ansible_ssh_pass=osboxes.org
 
 [check-win01]
-win01 ansible_user=root ansible_connection=ssh ansible_ssh_host=192.168.1.142 ansible_ssh_port=22 ansible_ssh_user=satw000001 ansible_ssh_pass=Ansible2018
+win01 ansible_user=satw000001 ansible_connection=winrm ansible_host=192.168.1.142 ansible_port=5985 ansible_ssh_pass=Ansible2018
